@@ -2,14 +2,11 @@ import React from "react";
 
 function DebounceSearch({ repos }) {
   return (
-    <div>
-      <ul
-        className="dropdown-menu"
-        style={{ maxHeight: "200px", overflowY: "auto", display: "block" }}
-      >
+    <div className="dropdown-menu">
+      <ul className="dropdown-list">
         {repos.map((repo) => {
           return (
-            <li key={repo.id}>
+            <p key={repo.id}>
               <a
                 className="dropdown-item"
                 href={repo.html_url}
@@ -18,7 +15,7 @@ function DebounceSearch({ repos }) {
               >
                 {repo.name}
               </a>
-            </li>
+            </p>
           );
         })}
       </ul>

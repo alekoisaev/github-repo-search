@@ -1,0 +1,119 @@
+/* main container */
+.App {
+  background-image: url(./git-logo.svg);
+  width: 80%;
+  min-height: 80vh;
+  padding: 10px;
+  margin: 30px auto 30px auto;
+  border-radius: 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 80px;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-label {
+  font-size: 20px;
+}
+
+.search-container input {
+  margin: 0;
+  background: #ffffff;
+  border: 0.5px solid #81c3d7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 3px 10px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #192036;
+}
+
+.search-container button {
+  border: 1px solid #81c3d7;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #192036;
+  font-size: 17px;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.search-container button:hover {
+  transition: all 0.3s;
+  background-color: #d4f5ff;
+  cursor: pointer;
+}
+
+// dropdown-search-list
+.dropdown-menu {
+  background-color: #f7f7f7;
+  max-height: 250px;
+  overflow-y: auto;
+  list-style-type: none;
+  padding-left: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.dropdown-list p {
+  font-size: 18px;
+  height: 25px;
+}
+
+.dropdown-list p > a {
+  color: black;
+}
+.dropdown-list a:hover {
+  color: black;
+}
+
+.dropdown-list p:hover {
+  background-color: lightgray;
+}
+
+.search-result {
+  justify-content: center;
+}
+
+.search-another-btn {
+  border: 1px solid #81c3d7;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #192036;
+  font-size: 17px;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.search-another-btn:hover {
+  transition: all 0.3s;
+  background-color: #d4f5ff;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  margin: 10px 0;
+  // margin-top: 90%;
+}

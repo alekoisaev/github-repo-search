@@ -21,6 +21,7 @@ function SearchBar() {
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
+
     fetch("https://api.github.com/search/repositories?q=" + e.target.value)
       .then((response) => {
         return response.json();
@@ -44,19 +45,28 @@ function SearchBar() {
 
   if (!searchButton) {
     return (
-      <div>
-        <input
-          type="text"
-          placeholder="Search Github Repositories"
-          onChange={optimizedVersion}
-        />
-        <button onClick={handleClick}>Search</button>
+      <div className="search-bar">
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Search Github Repo"
+            onChange={optimizedVersion}
+            className="search-label"
+          />
+          <button onClick={handleClick}>Search</button>
+        </div>
         {inputValue ? <DebounceSearch repos={repos} /> : <div></div>}
       </div>
     );
   } else {
-    return <SearchResult repos={repos} />;
+    return (
+      <div>
+        <SearchResult repos={repos} />
+      </div>
+    );
   }
 }
 
 export default SearchBar;
+
+// name, owner, avatar, url_repo, owner_url, create_data

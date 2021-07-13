@@ -1,3 +1,9 @@
+Github repositories searcher using Github API.
+
+bugs: if you enter repo name in field and after delete it and try to input again you see Error.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
